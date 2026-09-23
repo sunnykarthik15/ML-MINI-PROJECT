@@ -1,0 +1,66 @@
+{
+    "selected_model": "Linear SVM",
+    "selection_criteria": "Highest Macro F1-Score on isolated test set (80/20 stratified split)",
+    "metrics": {
+        "accuracy": 0.9263,
+        "precision": 0.9263,
+        "recall": 0.9263,
+        "f1_score": 0.9263
+    },
+    "all_models_compared": [
+        {
+            "model": "Linear SVM",
+            "accuracy": 0.9263,
+            "precision": 0.9263,
+            "recall": 0.9263,
+            "f1_score": 0.9263
+        },
+        {
+            "model": "Logistic Regression",
+            "accuracy": 0.9144,
+            "precision": 0.9146,
+            "recall": 0.9144,
+            "f1_score": 0.9144
+        },
+        {
+            "model": "Multinomial Naive Bayes",
+            "accuracy": 0.8772,
+            "precision": 0.8803,
+            "recall": 0.8772,
+            "f1_score": 0.8769
+        }
+    ],
+    "training_configuration": {
+        "test_split_ratio": 0.2,
+        "stratified": true,
+        "random_state": 42,
+        "vectorizer": {
+            "algorithm": "TF-IDF (TfidfVectorizer)",
+            "max_features": 5000,
+            "ngram_range": [
+                1,
+                2
+            ],
+            "sublinear_tf": true
+        }
+    },
+    "dataset_summary": {
+        "dataset_name": "fake_or_real_news.csv",
+        "total_records_cleaned": 6306,
+        "real_count": 3154,
+        "fake_count": 3152,
+        "train_samples": 5044,
+        "test_samples": 1262,
+        "eda_stats": {
+            "total_records": 6306,
+            "class_distribution": {
+                "REAL": 3154,
+                "FAKE": 3152
+            },
+            "avg_char_length": 3174.265461465271,
+            "avg_word_count": 436.4985727878211,
+            "real_avg_words": 492.4904882688649,
+            "fake_avg_words": 380.4711294416244
+        }
+    }
+}

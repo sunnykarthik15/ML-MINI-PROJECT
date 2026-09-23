@@ -1,0 +1,11 @@
+Classification Report: Logistic Regression
+============================================================
+
+              precision    recall  f1-score   support
+
+        FAKE     0.9054    0.9255    0.9154       631
+        REAL     0.9238    0.9033    0.9135       631
+
+    accuracy                         0.9144      1262
+   macro avg     0.9146    0.9144    0.9144      1262
+weighted avg     0.9146    0.9144    0.9144      1262

@@ -1,0 +1,11 @@
+Classification Report: Linear SVM
+============================================================
+
+              precision    recall  f1-score   support
+
+        FAKE     0.9230    0.9303    0.9266       631
+        REAL     0.9297    0.9223    0.9260       631
+
+    accuracy                         0.9263      1262
+   macro avg     0.9263    0.9263    0.9263      1262
+weighted avg     0.9263    0.9263    0.9263      1262
